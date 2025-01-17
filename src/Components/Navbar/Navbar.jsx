@@ -1,7 +1,7 @@
 import React from "react";
 import DarkMode from "./DarkMode";
 import { IoMdSearch } from "react-icons/io";
-import { FaShoppingCart } from "react-icons/fa";
+import { FaCaretDown, FaShoppingCart } from "react-icons/fa";
 
 const Navbar = () => {
   const MenuLinks = [
@@ -24,6 +24,23 @@ const Navbar = () => {
       id: 4,
       name: "Blogs",
       link: "/#blog",
+    },
+  ];
+  const DropDownLinks = [
+    {
+      id: 1,
+      name: "Trending Products",
+      link: "/#",
+    },
+    {
+      id: 2,
+      name: "Best Selling",
+      link: "/#",
+    },
+    {
+      id: 3,
+      name: "Top Rated",
+      link: "/#",
     },
   ];
   return (
@@ -54,6 +71,34 @@ const Navbar = () => {
                   </a>
                 </li>
               ))}
+              {/* DropDown */}
+              <li className="relative cursor-pointer group">
+                <a
+                  href="#"
+                  className="flex items-center gap-[2px] font-semibold text-gray-500 dark:hover:text-white py-2"
+                >
+                  Quick Links
+                  <span>
+                    {" "}
+                    <FaCaretDown className="group-hover:rotate-180 duration-300" />{" "}
+                  </span>
+                </a>
+                {/* Drop Down */}
+                <div className="absolute z-[9999] hidden group-hover:block w-[200px] rounded-md bg-white shadow-md dark:bg-gray-900 p-2 dark:text-white ">
+                  <ul className="space-y-2">
+                    {DropDownLinks.map((data, index) => (
+                      <li>
+                        <a
+                          href={data.link}
+                          className="text-gray-500 hover:text-black dark:hover:text-white duration-200 p-2 inline-block hover:bg-primary/20 w-full rounded-md font-semibold"
+                        >
+                          {data.name}
+                        </a>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              </li>
             </ul>
           </div>
           {/* Navbar Right Section */}
@@ -66,11 +111,13 @@ const Navbar = () => {
             {/* Order Button Section */}
             <button className="relative p-3">
               <FaShoppingCart className="text-xl text-gray-600 dark:text-gray-400" />
-              <div className="w-4 h-4 bg-red-500 text-white rounded-full absolute top-0 right-0 flex items-center justify-center text-xs ">4</div>
+              <div className="w-4 h-4 bg-red-500 text-white rounded-full absolute top-0 right-0 flex items-center justify-center text-xs ">
+                4
+              </div>
             </button>
             {/* Dark Mode Section */}
             <div>
-                <DarkMode/>
+              <DarkMode />
             </div>
           </div>
         </div>
