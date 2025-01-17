@@ -1,4 +1,5 @@
 import React from "react";
+import DarkMode from "./DarkMode";
 import { IoMdSearch } from "react-icons/io";
 import { FaShoppingCart } from "react-icons/fa";
 
@@ -68,7 +69,9 @@ const Navbar = () => {
               <div className="w-4 h-4 bg-red-500 text-white rounded-full absolute top-0 right-0 flex items-center justify-center text-xs ">4</div>
             </button>
             {/* Dark Mode Section */}
-            <div></div>
+            <div>
+                <DarkMode/>
+            </div>
           </div>
         </div>
       </div>
