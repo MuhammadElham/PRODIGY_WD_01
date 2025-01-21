@@ -7,8 +7,9 @@ const Category = () => {
   return (
     <div className="py-8">
       <div className="container">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-          {/* first col */}
+        {/* Changes  */}
+        <div class="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4">
+        {/* first col */}
           <div className="py-10 pl-5 bg-gradient-to-br from-black/90 to-black/70 text-white rounded-3xl relative h-[320px] flex items-end">
             <div>
               <div className="mb-4">
@@ -47,8 +48,8 @@ const Category = () => {
               className="w-[320px] absolute -right-4 lg:top-[40px]"
             />
           </div>
-          {/* third col */}
-          <div className="col-span-2 py-10 pl-5 bg-gradient-to-br from-primary to-primary/90 text-white rounded-3xl relative h-[320px] flex items-end">
+          {/* third col Changes */}
+          <div class="sm:col-span-2 py-10 pl-5 bg-gradient-to-br from-primary to-primary/90 text-white rounded-3xl relative h-[320px] flex items-end">
             <div>
               <div className="mb-4">
                 <p className="mb-[2px] text-white">Enjoy</p>
