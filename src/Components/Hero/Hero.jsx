@@ -9,14 +9,14 @@ const HeroData = [
   {
     id: 1,
     img: Image1,
-    substitle: "Beast Solo",
+    substitle: "Beats Solo",
     title: "Wireless",
     title2: "Headphone",
   },
   {
     id: 2,
     img: Image2,
-    substitle: "Beast Solo",
+    substitle: "Beats Solo",
     title: "Wireless",
     title2: "Virtual",
   },
