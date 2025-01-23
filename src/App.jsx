@@ -6,6 +6,7 @@ import Category2 from "./Components/Category/Category2";
 import Services from "./Components/Services/Services";
 import Bannar from "./Components/Bannar/Bannar";
 import headphone from "./assets/hero/headphone.png"
+import Products from "./Components/Products/Products";
 const BannarData = {
   discount: "30% OFF",
   title: "Fine Smile",
@@ -26,6 +27,7 @@ const App = () => {
       <Category2 />
       <Services />
       <Bannar data={BannarData} />
+      <Products />
     </div>
   );
 };
