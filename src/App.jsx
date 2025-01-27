@@ -10,6 +10,7 @@ import Products from "./Components/Products/Products";
 import smartwatch2 from "./assets/category/smartwatch2-removebg-preview.png"
 import Blogs from "./Components/Blogs/Blogs";
 import Partners from "./Components/Partners/Partners";
+import Footer from "./Components/Footer/Footer";
 const BannarData = {
   discount: "30% OFF",
   title: "Fine Smile",
@@ -44,6 +45,7 @@ const App = () => {
       <Bannar data={BannarData2} />
       <Blogs/>
       <Partners/>
+      <Footer />
     </div>
   );
 };
