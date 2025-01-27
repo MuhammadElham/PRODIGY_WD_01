@@ -1,4 +1,11 @@
 import React from "react";
+import {
+  FaGithub,
+  FaLinkedin,
+  FaLocationArrow,
+  FaMobileAlt,
+} from "react-icons/fa";
+import { IoMdMail } from "react-icons/io";
 
 const Footer = () => {
   const FooterLinks = [
@@ -49,31 +56,64 @@ const Footer = () => {
           </div>
           {/* Footer Links */}
           <div className="col-span-2 grid grid-cols-2 sm:grid-cols-3 md:pl-10">
-            {/* 1 Column */}
+            {/* part-a Column */}
             <div className="py-8 px-4">
-              <h1 className="text-xl font-bold sm:text-left mb-3">Important Links</h1>
+              <h1 className="text-xl font-bold sm:text-left mb-3">
+                Important Links
+              </h1>
               <ul className="space-y-3">
-                {FooterLinks.map((data,index)=>(
-                    <li key={index}>
-                        <a href={data.link} className="text-gray-600 dark:text-gray-400 hover:text-black dark:hover:text-white duration-300">
-                            {data.title}
-                        </a>
-                    </li>
+                {FooterLinks.map((data, index) => (
+                  <li key={index}>
+                    <a
+                      href={data.link}
+                      className="text-gray-600 dark:text-gray-400 hover:text-black dark:hover:text-white duration-300"
+                    >
+                      {data.title}
+                    </a>
+                  </li>
                 ))}
               </ul>
             </div>
-            {/* 2 Column */}
+            {/* part-b Column */}
             <div className="py-8 px-4">
-              <h1 className="text-xl font-bold sm:text-left mb-3">Quick Links</h1>
+              <h1 className="text-xl font-bold sm:text-left mb-3">
+                Quick Links
+              </h1>
               <ul className="space-y-3">
-                {FooterLinks.map((data,index)=>(
-                    <li key={index}>
-                        <a href={data.link} className="text-gray-600 dark:text-gray-400 hover:text-black dark:hover:text-white duration-300">
-                            {data.title}
-                        </a>
-                    </li>
+                {FooterLinks.map((data, index) => (
+                  <li key={index}>
+                    <a
+                      href={data.link}
+                      className="text-gray-600 dark:text-gray-400 hover:text-black dark:hover:text-white duration-300"
+                    >
+                      {data.title}
+                    </a>
+                  </li>
                 ))}
               </ul>
+            </div>
+            {/* 3 Column */}
+            <div className="py-8 px-4 col-span-2 sm:col-auto">
+              <h1 className="text-xl font-bold sm:text-left mb-3">Address</h1>
+              <div className="flex items-center gap-3">
+                <FaLocationArrow />
+                <p>Karachi , Pakistan</p>
+              </div>
+              <div className="flex items-center gap-3 mt-6">
+                <FaMobileAlt />
+                <p>+92 3333003310</p>
+              </div>
+              <div className="flex items-center gap-3 mt-6">
+                <a href="https://github.com/MuhammadElham">
+                  <FaGithub className="text-3xl hover:text-primary duration-300" />
+                </a>
+                <a href="https://www.linkedin.com/in/elham-waheed-572119253/">
+                  <FaLinkedin className="text-3xl hover:text-primary duration-300" />
+                </a>
+                <a href="mailto:elhamwaheed777@gmail.com">
+                  <IoMdMail className="text-3xl hover:text-primary duration-300" />
+                </a>
+              </div>
             </div>
           </div>
         </div>
