@@ -6,7 +6,10 @@ import brand4 from "../../assets/brand/br-4.png";
 import brand5 from "../../assets/brand/br-5.png";
 const Partners = () => {
   return (
-    <div className="mt-24 bg-gray-200 dark:bg-white/10 py-8 hidden md:block">
+    <div
+      data-aos="zoom-out"
+      className="mt-24 bg-gray-200 dark:bg-white/10 py-8 hidden md:block"
+    >
       <div className="container">
         <div className="grid grid-cols-5 gap-3 place-items-center opacity-50">
           <img src={brand1} alt="brand" className="w-[80px] dark:invert" />
